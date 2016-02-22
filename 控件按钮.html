@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $("button").on("click", function(){
+            alert($(this));
+        });
+
+    })
+
+    </script>
+</head>
+
+<body>
+    <input type="text" class="input-lg form-control">
+    <input type="text" class="input-sm form-control">
+    <button class="btn">btn</button>
+    <button class="disabled">btn</button>
+    <button class="btn btn-default">default</button>
+    <button class="btn-success">default</button>
+    <button class="btn btn-success">default</button>
+    <button class="btn btn-link">default</button>
+    <button class="btn btn-lg btn-info active">button</button>
+    <button class="btn btn-block btn-danger">button</button>
+    <button type="button" class="btn btn-primary disabled">大按钮</button>
+    <button type="button" class="btn btn-primary "disabled>大按钮</button>
+</body>
+
+</html>
