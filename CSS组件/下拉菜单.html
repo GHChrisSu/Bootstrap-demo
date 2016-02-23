@@ -10,23 +10,49 @@
 </head>
 
 <body>
-    <div class="dropdown open clearfix">
+    <div class="dropdown open clearfix pull-left">
         <ul aria-labelledby="dropdownMenu2" role="menu" class="dropdown-menu">
             <li class="dropdown-header" role="presentation">翻译图书</li>
-            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">JavaScript
+            <li role="presentation" class="active"><a href="#" tabindex="-1" role="menuitem">JavaScript
               编程精解</a></li>
             <li role="presentation"><a href="#" tabindex="-1" role="menuitem">JavaScript
               设计模式</a></li>
             <li role="presentation"><a href="#" tabindex="-1" role="menuitem">JavaScript
               启示录</a></li>
-            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Backbone
+            <li class="dropdown-submenu" role="presentation"><a href="#" tabindex="-1" role="menuitem">Backbone
               应用开发指南</a></li>
             <li role="presentation" class="divider"></li>
             <li role="presentation" class="dropdown-header">原创图书</li>
-            <li role="presentation"><a href="#" tabindex="-1" role="menuitem">深入理解
-               Bootstrap</a></li>
+            <li class="dropdown-submenu">
+                <a href="#" tabindex="-1" role="menuitem">深入理解Bootstrap</a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">二级菜单项</a></li>
+                    <li><a tabindex="-1" href="#">二级菜单项</a></li>
+                    <li><a tabindex="-1" href="#">二级菜单项</a></li>
+                    <li><a tabindex="-1" href="#">二级菜单项</a></li>
+                    <li><a tabindex="-1" href="#">二级菜单项</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
+    <div class="dropdown open pull-left">
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+            <!-- 其他多个菜单项li元素 -->
+            <li class="dropdown-submenu">
+                <a tabindex="-1" href="#">More options</a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">二级菜单项</a></li>
+                    <li><a tabindex="-1" href="#">二级菜单项</a></li>
+                    <li><a tabindex="-1" href="#">二级菜单项</a></li>
+                    <li><a tabindex="-1" href="#">二级菜单项</a></li>
+                    <li><a tabindex="-1" href="#">二级菜单项</a></li>
+                </ul>
+            </li>
+            <!-- 其他多个菜单项li元素 -->
+        </ul>
+
+    </div>
+
 </body>
 
 </html>

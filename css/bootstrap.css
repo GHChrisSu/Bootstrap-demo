@@ -6798,3 +6798,44 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+/* 2.x start*/
+.dropdown-submenu {
+   position: relative;          /* 相对定位 */
+}
+.dropdown-submenu > .dropdown-menu {
+      top: 0;
+      left: 100%;                       /* 右侧开始对齐 */
+      margin-top: -6px;        margin-left: -1px;
+      -webkit-border-radius: 0 6px 6px 6px;
+      -moz-border-radius: 0 6px 6px 6px;
+      border-radius: 0 6px 6px 6px;
+   }
+.dropdown-submenu:hover > .dropdown-menu { display: block;    }
+.dropup .dropdown-submenu > .dropdown-menu {
+top: auto;    bottom: 0;                /* 向上方向 */
+   margin-top: 0;    margin-bottom: -2px;
+   -webkit-border-radius: 5px 5px 5px 0;
+   -moz-border-radius: 5px 5px 5px 0;
+   border-radius: 5px 5px 5px 0;
+}
+.dropdown-submenu > a:after {
+   display: block;
+   float: right;
+   width: 0;    height: 0;
+   margin-top: 5px;    margin-right: -10px;   border-color: transparent;
+   border-left-color: #cccccc;  /* 三角符号设置*/
+   border-style: solid;
+   border-width: 5px 0 5px 5px;
+   content: " ";
+}
+.dropdown-submenu:hover > a:after {
+    border-left-color: #cccccc;                 /* 鼠标移动时的三角符号设置*/ }
+.dropdown-submenu.pull-left {    float: none;   /* 取消子菜单的向右浮动 */ }
+.dropdown-submenu.pull-left > .dropdown-menu {
+      left: -100%;              /* 向右浮动的时候，子菜单应该从最左侧开始对齐计算 */
+      margin-left: 10px;
+      -webkit-border-radius: 6px 0 6px 6px;
+      -moz-border-radius: 6px 0 6px 6px;
+      border-radius: 6px 0 6px 6px;
+}
+/* 2.x end*/
