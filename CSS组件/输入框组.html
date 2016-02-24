@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("li").click(function() {
+                var temp = $(this).text();
+                //alert(temp);
+                $("#myBtn").html(temp + ' ' + "<span class='caret'></span>");
+            });
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control">
+        <span class="input-group-addon">￥</span>
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon"><input type="checkbox" name="name" value=""></span>
+        <input type="text" class="form-control">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon"><input type="radio" name="name" value=""></span>
+        <input type="text" class="form-control">
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="input-group">
+                <span class="input-group-btn"><buttton class="btn btn-default">button</buttton></span>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button id="myBtn" class="btn btn-default dropdown-toggle" data-toggle="dropdown">button
+                        <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="">button</a></li>
+                        <li><a href="">aaaa</a></li>
+                        <li><a href="">bbbb</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <div class="input-group-btn open">
+                    <button class="btn btn-default" type="button">Action</button>
+                    <button data-toggle="dropdown" class="btn btn-default
+                              dropdown-toggle" type="button">
+                              <!-- About .sr-only: the class is used to hide information used for screen readers. -->
+                        <span class="caret"></span><span class="sr-only">Toggle
+                              Dropdown</span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu pull-right">
+                        <li><a href="">button</a></li>
+                        <li><a href="">aaaa</a></li>
+                        <li><a href="">bbbb</a></li>
+                    </ul>
+                </div></div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
