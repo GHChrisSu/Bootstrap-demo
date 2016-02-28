@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- 基本格式 -->
+    <div class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown trigger</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a data-target="#">111</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">下拉菜单触发元素</a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            ...
+        </ul>
+    </div>
+
+    <button id="btn" data-toggle="dropdown" data-target="#menutest1">外部按钮</button>
+    <ul class="nav nav-pills">
+        <li class="dropdown" id="menutest1">
+            <!--必须在父元素上设置和data-target一致的id值，
+      即menutest1 -->
+            <ul class="dropdown-menu">
+                <li><a href="#">动作</a></li>
+                …
+                <li class="divider"></li>
+                <li><a href="#">被间隔的链接</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
