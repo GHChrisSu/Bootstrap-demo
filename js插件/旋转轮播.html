@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+
+    <style>
+        #carousel-container {
+            width: 900px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel slide" id="carousel-container" data-ride="carousel">
+        <!-- 圆点指示 -->
+        <ol class="carousel-indicators">
+            <li data-slide-to="0" data-target="#carousel-container" class="active"></li>
+            <li data-slide-to="1" data-target="#carousel-container"></li>
+            <li data-slide-to="2" data-target="#carousel-container"></li>
+        </ol>
+        <!-- 图片容器 -->
+        <div class="carousel-inner">
+            <!-- 必须设置一个active样式 否则无法正常显示 -->
+            <div class="item active">
+                <img src="../../img/1.jpg" alt="1">
+                <div class="carousel-caption">
+                    <h3>标题1</h3>
+                    <p>描述1...</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../img/2.jpg" alt="2">
+                <div class="carousel-caption">
+                    <h3>标题2</h3>
+                    <p>描述2...</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="../../img/3.jpg" alt="3">
+                <div class="carousel-caption">
+                    <h3>标题3</h3>
+                    <p>描述3...</p>
+                </div>
+            </div>
+        </div>
+        <!-- 左右按钮 -->
+        <a href="#carousel-container" class="carousel-control left" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#carousel-container" class="carousel-control right" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</body>
+
+</html>

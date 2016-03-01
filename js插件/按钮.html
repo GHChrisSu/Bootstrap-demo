@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script>
+        $(function() {
+            $("#loading").click(function() {
+                $(this).button("loading");
+                setTimeout(function() {
+                    $("#loading").button('reset');
+                }, 3000);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input type="checkbox">选项1</label>
+        <label class="btn btn-primary">
+            <input type="checkbox">选项2</label>
+        <label class="btn btn-primary">
+            <input type="checkbox">选项3</label>
+    </div>
+
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="option1">男</label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="option2">女</label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="option3">未知</label>
+    </div>
+
+    <button id="loading" class="btn btn-default" data-loading-text="正在加载...." autocomplete="off">Button</button>
+</body>
+
+</html>

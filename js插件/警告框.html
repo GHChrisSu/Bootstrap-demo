@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script>
+        function recover(){
+            alert("recovering...");
+            $('#alert2').alert();
+        }
+    </script>
+</head>
+
+<body>
+    <button class="btn btn-default" onclick="recover();">recover</button>
+    <div class="alert alert-warning fade in">
+        <buttton class="close"><span class="glyphicon glyphicon-remove" data-dismiss="alert"></span></buttton>
+
+        <h4>警告标题</h4>
+        <p>Change this and that and try again. ...</p>
+        <a href="#" class="btn btn-danger" data-dismiss="alert">关闭</a>
+    </div>
+
+
+    <a href="#" class="btn btn-danger" data-dismiss="alert" data-target="#alert2">关闭</a>
+    <div id="alert2" class="alert alert-warning fade in">
+        <h4>警告标题</h4>
+        <p>Change this and that and try again. ...</p>
+    </div>
+</body>
+
+</html>

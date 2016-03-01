@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $('[data-toggle=tooltip]').tooltip();
+    })
+
+    </script>
+</head>
+
+<body>
+    <p>ww</p>
+    <!-- 不加data-container的话，显示提示后元素会“变窄” -->
+    <a href="#" data-toggle="tooltip" data-original-title="这里是提示语的内容" data-container="body">链接</a>
+    <a href="#" data-toggle="tooltip" data-placement="right" title="设置title也可以">链接</a>
+    <a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="left" title="左侧的 Tooltip">
+   左侧的 Tooltip
+</a>
+</body>
+
+</html>
