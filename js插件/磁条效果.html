@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<script type="text/javascript" src="../jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+</head>
+	<style>
+	.tile {
+    position: relative;         /* 相对布局*/
+    overflow: hidden;           /* 内部元素溢出时，将其隐藏*/
+    display: block;             /* 块级显示*/
+    float: left;                        /* 左浮动*/
+    width: 120px;                       /* 标准的tile大小是120×120*/
+    height: 120px;
+    margin: 0 10px 10px 0;      /* 设置右外边距和底部外边距，稍后会讲解原因*/
+    padding: 0;                 /* 不设置内边距*/
+    cursor: pointer;            /* 默认鼠标移动上去时显示手形图标 */
+    background-color: #eeeeee;  /* 默认背景颜色是灰色 */
+    box-shadow: inset 0px 0px 1px #FFFFCC;      /* 设置少许的阴影 */
+}
+.tile.selected {
+   border: 4px #4390df solid;
+}
+.tile.selected:after {
+    position: absolute;                 
+    display: block;                     
+    border-top: 28px solid #4390df;     
+    border-left: 28px solid transparent;
+    right: 0;                           
+    top: 0;
+    content: "";   
+    z-index: 101;
+    }
+    .tile.selected:before {
+    position: absolute;                
+    display: block;                    
+    content: "\e013";                  
+    color: #fff;                       
+    right: 0;                          
+    top: 0;
+    font-family: Glyphicons Halflings; 
+    font-size: 10pt;
+    font-weight: normal;
+    z-index: 102;       
+}
+</style>
+<body>
+	<div class="tile selected"></div>
+</body>
+</html>

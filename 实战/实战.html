@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/bootstrap-datetimepicker.css">
+	<script type="text/javascript" src="../jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-datetimepicker.min.js"></script>
+	<style>
+		.panel > .table-bordered, .panel > .table-responsive > .table-bordered{
+			border-bottom:1px solid #ddd;
+		}
+	</style>
+	<script>
+		$(function(){
+			 $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<input size="16" type="text" value="2012-06-15 14:45" readonly class="form_datetime">
+
+
+				<button class="btn btn-success" data-toggle="modal" data-target="#createModal">New</button>
+				<button class="btn btn-warning">Disable</button>
+				<button class="btn btn-danger">Delete</button>
+				<div class="pull-right">
+					<div class="btn-group">
+						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							Filter
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">aa</a>
+							</li>
+							<li>
+								<a href="#">aa</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">aa</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="btn-group">
+						<button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							Filter
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li>
+								<a href="#">aa</a>
+							</li>
+							<li>
+								<a href="#">aa</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#">aa</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<table class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>
+							<input type="checkbox"></th>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input type="checkbox"></td>
+						<td>aa</td>
+						<td>aa</td>
+						<td>
+							<button class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal">Info</button>
+							<div class="btn-group">
+								<button class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown">
+									more
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">zz</a>
+									</li>
+									<li>
+										<a href="#">zz</a>
+									</li>
+								</ul>
+							</div>
+
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="checkbox"></td>
+						<td>bb</td>
+						<td>bb</td>
+						<td>bb</td>
+					</tr>
+				</tbody>
+
+			</table>
+			<br>
+			<ul class="pagination">
+				<li>
+					<a href="#">&laquo;</a>
+				</li>
+				<li>
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li class="disabled">
+					<a href="#">...</a>
+				</li>
+				<li>
+					<a href="#">10</a>
+				</li>
+				<li>
+					<a href="#">&raquo;</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true"
+	 data-backdrop="true" data-keyboard="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">
+						<span class="glyphicon glyphicon-remove"></span>
+					</button>
+					<h3>This is Header</h3>
+
+				</div>
+				<div class="modal-body">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>name</th>
+								<th>birthday</th>
+								<th>id</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>aa</td>
+							<td>aa</td>
+							<td>aa</td>
+						</tr>
+						<tr>
+							<td>bb</td>
+							<td>bb</td>
+							<td>bb</td>
+						</tr>
+						<tr>
+							<td>cc</td>
+							<td>cc</td>
+							<td>cc</td>
+						</tr>
+					</table>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal">Close</button>
+					<button class="btn btn-primary">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true"
+	 data-backdrop="true" data-keyboard="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">
+						<span class="glyphicon glyphicon-remove"></span>
+					</button>
+					Create new information
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="newEmail" class="col-md-2 control-label">Email</label>
+							<div class="col-md-10">
+								<input type="email" id="newEmail" class="form-control"></div>
+						</div>
+						<div class="form-group">
+							<label for="newPwd" class="col-md-2 control-label">Password</label>
+							<div class="col-md-10">
+								<input type="password" id="newPwd" class="form-control"></div>
+						</div>
+
+						<div class="form-group">
+							<label for="newBirth" class="col-md-2 control-label">Birthday</label>
+							<div class="col-md-10">
+								<input type="text" id="newBirth" class="form-control"></div>
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal">Close</button>
+					<button class="btn btn-primary">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
