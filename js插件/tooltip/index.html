@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<script type="text/javascript" src="../../jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="../../js/bootstrap.js"></script>
+	<style>
+	.tooltip-inner {
+		display: block;
+		display: -webkit-box;
+		max-width: 300px;
+		max-height: 28px;
+		font-size: 14px;
+		line-height: 1;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		padding:0;
+	}
+	</style>
+</head>
+
+<body>
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="=Tooltip on bottom Tooltip on bottom Tooltip on bottom Tooltip on bottom Tooltip on bottomv Tooltip on bottom">Tooltip on bottom</button>
+	<script>
+	$("button").tooltip();
+	</script>
+</body>
+
+</html>
